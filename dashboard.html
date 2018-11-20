@@ -27,7 +27,7 @@
             class="navbar-brand"
             href="#"
         >虎尾控制區塊</a>
-        <button
+        <!-- <button
             class="navbar-toggler"
             type="button"
             data-toggle="collapse"
@@ -37,7 +37,7 @@
             aria-label="Toggle navigation"
         >
             <span class="navbar-toggler-icon"></span>
-        </button>
+        </button> -->
 
         <div
             class="collapse navbar-collapse"
@@ -47,7 +47,7 @@
                 <li class="nav-item active">
                     <a
                         class="nav-link"
-                        href="#"
+                        href="/dashboard.html"
                     >首頁 <span class="sr-only">(current)</span></a>
                 </li>
                 <!-- <li class="nav-item">
@@ -126,7 +126,7 @@
                     <div class="card-body d-flex">
                         <div class="fas fa-file-contract fa-3x text-warning mr-3 d-done"></div>
                         <div class="text-center w-100">
-                            <div class="h3">有無資料</div>
+                            <div class="h3">及時資料</div>
                         </div>
                     </div>
                 </div>
@@ -148,8 +148,8 @@
             <tr>
                 <th scope="col"></th>
                 <th scope="col">點位</th>
-                <th scope="col">設備</th>
-                <th scope="col">現地Data</th>
+                <th width="400">設備</th>
+                <th width="500">現地Data</th>
                 <th scope="col">設備控制</th>
             </tr>
             </thead>
@@ -157,47 +157,324 @@
             <tr>
                 <th scope="row">1</th>
                 <td>大滯洪池</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                
+                <td>超音波水位計</td>
+                <td>水位高度<strong>0M</strong></td>
+                <td>
+                        警戒值
+<button type="button" class="fa fa-cogs  text-success " data-toggle="modal" data-target="#exampleModal "></button>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="1" role="dialog">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">水位高度警戒值</h5></div>
+            <div class="modal-body">
+                    <form class="form-inline">
+                            <div class="form-group">
+                            <label for="inputPassword6" class="">高高</label>
+                            <input type="password" id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+                            <small  class="text-muted">
+                                21.13路面高度≧20.5(滯洪池全滿)≦17.9底床高度
+                            </small>
+                            </div>
+                            <div class="form-group">
+                            <label for="inputPassword6" class="pb-4 pl-3 ">高</label>
+                            <input type="password" id="inputPassword6" class="form-control mx-sm-3 pl-1" aria-describedby="passwordHelpInline">
+                            <small  class="text-muted">
+                                17.9路面高度≧高高水位≦19.2(滯洪池50%滿)
+                                    </small>
+                                </div>
+                    </form>
+
+            </div>
+            <div class="modal-footer">
+                    
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                    <button type="submit" class="btn btn-primary">寫入</button>
+                    <button type="submit" class="btn btn-primary">驗證資料</button>
+        
+                    </div>
+        </div>
+        </div>
+    </div>
+                </td>
             </tr>
             <tr>
                 <th scope="row">2</th>
                 <td>小滯洪池</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td>@twitter</td>
+                <td>超音波水位計</td>
+                <td>水位高度<strong>0.4M</strong></td>
+                <td>
+                        警戒值
+                        <button type="button" class="fa fa-cogs  text-success " data-toggle="modal" data-target="#exampleModal "></button>
+                        
+                        
+                            <div class="modal fade" id="exampleModal" tabindex="1" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">水位高度警戒值</h5></div>
+                                    <div class="modal-body">
+                                            <form class="form-inline">
+                                                    <div class="form-group">
+                                                    <label for="inputPassword6" class="">高高</label>
+                                                    <input type="password" id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+                                                    <small  class="text-muted">
+                                                        21.03路面高度≧20.5(滯洪池全滿)≦18.95底床高度
+                                                    </small>
+                                                    </div>
+                                                    <div class="form-group">
+                                                    <label for="inputPassword6" class="pb-4 pl-3 ">高</label>
+                                                    <input type="password" id="inputPassword6" class="form-control mx-sm-3 pl-1" aria-describedby="passwordHelpInline">
+                                                    <small  class="text-muted">
+                                                        17.4路面高度≧高高水位≦18.95(滯洪池50%滿)
+                                                            </small>
+                                                        </div>
+                                            </form>
+                        
+                                    </div>
+                                    <div class="modal-footer">
+                                            
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                                            <button type="submit" class="btn btn-primary">寫入</button>
+                                            <button type="submit" class="btn btn-primary">驗證資料</button>
+                                
+                                            </div>
+                                </div>
+                                </div>
+                            </div>
+                </td>
             </tr>
             <tr>
                 <th scope="row">3</th>
-                <td colspan="2">新庄子大排上游</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
+                <td>新庄子大排上游</td>
+                <td>超音波水位計/雨量計</td>
+                <td>水位高度<strong>0.054M</strong></td>
+                <td>
+                        警戒值
+                        <button type="button" class="fa fa-cogs  text-success " data-toggle="modal" data-target="#exampleModal "></button>
+                        
+                        
+                            <div class="modal fade" id="exampleModal" tabindex="1" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">水位高度警戒值</h5></div>
+                                    <div class="modal-body">
+                                            <form class="form-inline">
+                                                    <div class="form-group">
+                                                    <label for="inputPassword6" class="">高高</label>
+                                                    <input type="password" id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+                                                    <small  class="text-muted">
+                                                        21.05路面高度≧20.5(滯洪池全滿)≦17.6底床高度
+                                                    </small>
+                                                    </div>
+                                                    <div class="form-group">
+                                                    <label for="inputPassword6" class="pb-4 pl-3 ">高</label>
+                                                    <input type="password" id="inputPassword6" class="form-control mx-sm-3 pl-1" aria-describedby="passwordHelpInline">
+                                                    <small  class="text-muted">
+                                                        17.6路面高度≧高高水位≦19.05(滯洪池50%滿)
+                                                            </small>
+                                                        </div>
+                                            </form>
+                        
+                                    </div>
+                                    <div class="modal-footer">
+                                            
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                                            <button type="submit" class="btn btn-primary">寫入</button>
+                                            <button type="submit" class="btn btn-primary">驗證資料</button>
+                                
+                                            </div>
+                                </div>
+                                </div>
+                            </div>
+                </td>
             </tr>
             <tr>
-                <th scope="row">3</th>
-                <td colspan="2">新庄子大排下游</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
+                <th scope="row">4</th>
+                <td>新庄子大排下游</td>
+                <td>超音波水位計</td>
+                <td>水位高度<strong>0.0412M</strong>/雨量計<strong>0mm</strong></td>
+                <td>
+                        警戒值
+                        <button type="button" class="fa fa-cogs  text-success " data-toggle="modal" data-target="#exampleModal "></button>
+                        
+                        
+                            <div class="modal fade" id="exampleModal" tabindex="1" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">水位高度警戒值</h5></div>
+                                    <div class="modal-body">
+                                            <form class="form-inline">
+                                                    <div class="form-group">
+                                                    <label for="inputPassword6" class="">高高</label>
+                                                    <input type="password" id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+                                                    <small  class="text-muted">
+                                                        21.05路面高度≧20.5(滯洪池全滿)≦17.6底床高度
+                                                    </small>
+                                                    </div>
+                                                    <div class="form-group">
+                                                    <label for="inputPassword6" class="pb-4 pl-3 ">高</label>
+                                                    <input type="password" id="inputPassword6" class="form-control mx-sm-3 pl-1" aria-describedby="passwordHelpInline">
+                                                    <small  class="text-muted">
+                                                        17.6路面高度≧高高水位≦19.05(滯洪池50%滿)
+                                                            </small>
+                                                        </div>
+                                            </form>
+                        
+                                    </div>
+                                    <div class="modal-footer">
+                                            
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                                            <button type="submit" class="btn btn-primary">寫入</button>
+                                            <button type="submit" class="btn btn-primary">驗證資料</button>
+                                
+                                            </div>
+                                </div>
+                                </div>
+                            </div>
+                </td>
             </tr>
             <tr>
-                <th scope="row">3</th>
-                <td colspan="2">科虎三路與科雲路口</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
+                <th scope="row">5</th>
+                <td>科虎三路與科雲路口</td>
+                <td>超音波水位計</td>
+                <td>水位高度<strong>0.031M</strong></td>
+                <td>
+                        警戒值
+                        <button type="button" class="fa fa-cogs  text-success " data-toggle="modal" data-target="#exampleModal "></button>
+                        
+                        
+                            <div class="modal fade" id="exampleModal" tabindex="1" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">水位高度警戒值</h5></div>
+                                    <div class="modal-body">
+                                            <form class="form-inline">
+                                                    <div class="form-group">
+                                                    <label for="inputPassword6" class="">高高</label>
+                                                    <input type="password" id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+                                                    <small  class="text-muted">
+                                                        21.958路面高度≧20.458(滯洪池全滿)≦18.658底床高度
+                                                    </small>
+                                                    </div>
+                                                    <div class="form-group">
+                                                    <label for="inputPassword6" class="pb-4 pl-3 ">高</label>
+                                                    <input type="password" id="inputPassword6" class="form-control mx-sm-3 pl-1" aria-describedby="passwordHelpInline">
+                                                    <small  class="text-muted">
+                                                        18.658路面高度≧高高水位≦19.558(滯洪池50%滿)
+                                                            </small>
+                                                        </div>
+                                            </form>
+                        
+                                    </div>
+                                    <div class="modal-footer">
+                                            
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                                            <button type="submit" class="btn btn-primary">寫入</button>
+                                            <button type="submit" class="btn btn-primary">驗證資料</button>
+                                
+                                            </div>
+                                </div>
+                                </div>
+                            </div>  
+                </td>
             </tr>
             <tr>
-                <th scope="row">3</th>
-                <td colspan="2">科虎二路與科雲南路</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
+                <th scope="row">6</th>
+                <td>科虎二路與科雲南路</td>
+                <td>超音波水位計</td>
+                <td>---</td>
+                <td>
+                        警戒值
+                        <button type="button" class="fa fa-cogs  text-success " data-toggle="modal" data-target="#exampleModal "></button>
+                        
+                        
+                            <div class="modal fade" id="exampleModal" tabindex="1" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">水位高度警戒值</h5></div>
+                                    <div class="modal-body">
+                                            <form class="form-inline">
+                                                    <div class="form-group">
+                                                    <label for="inputPassword6" class="">高高</label>
+                                                    <input type="password" id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+                                                    <small  class="text-muted">
+                                                        21.98路面高度≧20.715(滯洪池全滿)≦18.615底床高度
+                                                    </small>
+                                                    </div>
+                                                    <div class="form-group">
+                                                    <label for="inputPassword6" class="pb-4 pl-3 ">高</label>
+                                                    <input type="password" id="inputPassword6" class="form-control mx-sm-3 pl-1" aria-describedby="passwordHelpInline">
+                                                    <small  class="text-muted">
+                                                        18.615路面高度≧高高水位≦19.665(滯洪池50%滿)
+                                                            </small>
+                                                        </div>
+                                            </form>
+                        
+                                    </div>
+                                    <div class="modal-footer">
+                                            
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                                            <button type="submit" class="btn btn-primary">寫入</button>
+                                            <button type="submit" class="btn btn-primary">驗證資料</button>
+                                
+                                            </div>
+                                </div>
+                                </div>
+                            </div>
+                </td>
             </tr>
             <tr>
-                <th scope="row">3</th>
-                <td colspan="2">科虎二路與科雲路口</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
+                <th scope="row">7</th>
+                <td>科虎二路與科雲路口</td>
+                <td>超音波水位計</td>
+                <td>---</td>
+                <td>
+                        警戒值
+                        <button type="button" class="fa fa-cogs  text-success " data-toggle="modal" data-target="#exampleModal "></button>
+                        
+                        
+                            <div class="modal fade" id="exampleModal" tabindex="1" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">水位高度警戒值</h5></div>
+                                    <div class="modal-body">
+                                            <form class="form-inline">
+                                                    <div class="form-group">
+                                                    <label for="inputPassword6" class="">高高</label>
+                                                    <input type="password" id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+                                                    <small  class="text-muted">
+                                                        22.997路面高度≧21.297(滯洪池全滿)≦19.697底床高度
+                                                    </small>
+                                                    </div>
+                                                    <div class="form-group">
+                                                    <label for="inputPassword6" class="pb-4 pl-3 ">高</label>
+                                                    <input type="password" id="inputPassword6" class="form-control mx-sm-3 pl-1" aria-describedby="passwordHelpInline">
+                                                    <small  class="text-muted">
+                                                        19.697路面高度≧高高水位≦20.497(滯洪池50%滿)
+                                                            </small>
+                                                        </div>
+                                            </form>
+                        
+                                    </div>
+                                    <div class="modal-footer">
+                                            
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                                            <button type="submit" class="btn btn-primary">寫入</button>
+                                            <button type="submit" class="btn btn-primary">驗證資料</button>
+                                
+                                            </div>
+                                </div>
+                                </div>
+                            </div>
+                </td>
             </tr>
             </tbody>
         </table>
@@ -260,14 +537,14 @@
                             <tr>
                                 <td>59.125.78.47(虎尾Server)</td>
                                 <td>60%</td>
-                                <td>10ms</td>
+                                <td>10MB/s</td>
                                 <td>8G</td>
                                 <td>2018-10-11 12:00</td>
                             </tr> 
                             <tr>
                                 <td>192.168.123.101(中興Server)</td>
                                 <td>60%</td>
-                                <td>10ms</td>
+                                <td>10MB/s</td>
                                 <td>8G</td>
                                 <td>2018-10-11 12:00</td>
                             </tr>   
